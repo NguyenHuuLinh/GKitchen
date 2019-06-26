@@ -11,17 +11,17 @@ class Home extends React.Component {
             isShowFormBuyNow: false
         }
         this.showFormBuyNow = this.showFormBuyNow.bind(this);
-        this.closeFormBuyNow= this.closeFormBuyNow.bind(this);
+        this.closeFormBuyNow = this.closeFormBuyNow.bind(this);
     }
 
-    showFormBuyNow(){
-        this.setState ({
+    showFormBuyNow() {
+        this.setState({
             isShowFormBuyNow: !this.state.isShowFormBuyNow
         })
     }
 
-    closeFormBuyNow(){
-        this.setState ({
+    closeFormBuyNow() {
+        this.setState({
             isShowFormBuyNow: false
         })
     }
@@ -30,13 +30,13 @@ class Home extends React.Component {
         let showPopup = this.state.isShowFormBuyNow;
         let elmPopup = null;
 
-        if(showPopup){
-            elmPopup= <PopUpBuyNow onClose={this.closeFormBuyNow}/>
+        if (showPopup) {
+            elmPopup = <PopUpBuyNow onClose={this.closeFormBuyNow} />
         }
 
         return (
             <div className="img-avt">
-                <img src="https://gkitchen.com/upload/post/banner/pc/290419024543.jpg" style={{ width: "100%"}} alt="avt"></img>
+                <img src="https://gkitchen.com/upload/post/banner/pc/290419024543.jpg" style={{ width: "100%" }} alt="avt"></img>
                 <div className="title-box">
                     <p className="title-text">
                         THỊT THẬT THÀ
@@ -47,7 +47,7 @@ class Home extends React.Component {
                     <BuyNow onClickBuy={this.showFormBuyNow} />
                     {elmPopup}
                 </div>
-                <SlideProducts/>
+                <SlideProducts />
             </div>
         )
     }
