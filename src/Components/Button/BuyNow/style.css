@@ -1,0 +1,22 @@
+.over{
+    float: left;
+}
+
+.button-detail{
+    float: left;
+    width: 152px;
+    height: 32px;
+    border: 1px solid #22b24c;
+    background-color: #22b24c;
+    margin-top: 32px;
+}
+
+.button-detail div:hover{
+    color: #000;
+}
+
+.button-text{
+    color:#fff;
+    text-align: center;
+    padding-top: 8px;
+}

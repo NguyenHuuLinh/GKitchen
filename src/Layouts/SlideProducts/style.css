@@ -1,0 +1,45 @@
+.img-products{
+    background: url("https://gkitchen.com/images/home/line_border.png");
+    width: 40%;
+    height: 365px;
+    margin: auto;
+    margin-left: 108px;
+}
+
+.over{
+    height: 800px;
+    background-color: #606060;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-top: 64px;
+}
+
+.content {
+    float: right;
+    padding-right: 76px;
+}
+
+.content-title {
+    font-weight: bold;
+    font-size: 36px;
+    color: #fff;
+}
+
+.content-sub {
+    color: #fff;
+    margin-top: 16px;
+}
+
+.content-detail {
+    width: 400px;
+    height: 30px;
+    margin-top: 32px;
+    color: #fff;
+    height: 128px;
+}
+
+btn-detail{
+    margin-top: 48px;
+    margin-left: 32px;
+}

@@ -1,0 +1,110 @@
+.popup-form {
+  position: fixed;
+  z-index: 1000;
+  top: 10%;
+  left: 0;
+  right: 0;
+  background: #eee;
+  width: 30%;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 124px;
+}
+
+.text {
+  color: #000;
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.dropbtn {
+  background-color: #22b24c;
+  color: #000;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  padding: 8px 32px;
+  color: #fff;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  margin: auto;
+  margin-left: 56px;
+  font-size: 18px;
+  background-color: rgb(212, 209, 209);
+  width: 70%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-color: #22b24c;
+  padding: 8px;
+  background: #22b24c;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown option:hover {
+  background-color: #22b24c;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.button-watch {
+  width: 128px;
+  height: 32px;
+  border: 1px solid #22b24c;
+  background-color: #22b24c;
+  margin: auto;
+  margin-top: 72px;
+  margin-bottom: 24px;
+}
+
+.button-watch div:hover {
+  color: #386646;
+  width: 128px;
+  height: 32px;
+}
+
+.button-text {
+  color: #fff;
+  text-align: center;
+  padding-top: 8px;
+  border-radius: 10px;
+}
+
+.ionic-close {
+  position: absolute;
+  top: 5px;
+  right: 9px;
+  color: #777;
+  cursor: pointer;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.5;
+}
