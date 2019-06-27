@@ -2,9 +2,9 @@ import React from 'react'
 
 const Products = () => {
     return (
-        <div>
+        <h1>
             Products Components
-        </div>
+        </h1>
     )
 }
 
