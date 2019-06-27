@@ -25,13 +25,6 @@ class Home extends React.Component {
     }
 
     render() {
-        let showPopup = this.state.isShowFormBuyNow;
-        let elmPopup = null;
-
-        if (showPopup) {
-            elmPopup = <PopUpBuyNow onClose={this.closeFormBuyNow} />
-        }
-
         return (
             <div className="img-avt">
                 <img src="https://gkitchen.com/upload/post/banner/pc/290419024543.jpg" style={{ width: "100%" }} alt="avt"></img>
@@ -43,7 +36,7 @@ class Home extends React.Component {
                         Mới là thịt ngon
                     </p>
                     <BuyNow onClickBuy={this.showFormBuyNow} />
-                    {elmPopup}
+                    {this.state.isShowFormBuyNow && <PopUpBuyNow onClose={this.closeFormBuyNow} />}
                 </div>
                 <SlideProducts />
             </div>

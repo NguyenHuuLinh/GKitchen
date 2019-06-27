@@ -19,13 +19,6 @@ class SlideProducts extends React.Component {
     }
 
     render() {
-        let showPageDetail = this.state.isShowPage;
-        let elmPage = null;
-
-        if (showPageDetail) {
-            elmPage = <ProductsDetail />
-        }
-
         return (
                 <div className="over">
                     <img src="https://stagingimg.gkitchen.com.vn/products/productImages-1558409288736.png" className="img-products" alt=""></img>
@@ -35,8 +28,8 @@ class SlideProducts extends React.Component {
                         <img src="https://gkitchen.com/images/home/line.png" alt=""/>
                         <div className="content-detail">Xúc xích xông khói G là sản phẩm hảo hạng được mọi đối tượng yêu thích bởi sự kết hợp độc đáo giữa thịt heo sạch hòa quyện cùng mỡ, tiêu, tỏi và các loại gia vị ...</div>
                         <div className="btn-detail">
-                            <ProductDetail onClickPage={this.showPage} />
-                            {elmPage}
+                            <ProductDetail onClickPage={this.showPage}/>
+                            {this.state.isShowPage && <ProductsDetail/>}
                         </div>
                     </div>
                     <ListProducts/>
