@@ -6,10 +6,9 @@ class BuyNow extends React.Component {
         super(props)
         this.state = {
         }
-        this.handleFormBuy = this.handleFormBuy.bind(this);
     }
 
-    handleFormBuy() {
+    handleFormBuy = () => {
         this.props.onClickBuy();
     }
 
@@ -17,12 +16,10 @@ class BuyNow extends React.Component {
         return (
             <div>
                 <div className="button-detail button-text" onClick={this.handleFormBuy} onClose={this.closeFormBuyNow}>
-                    <div>Mua ngay</div>
+                    Mua ngay
                 </div>
                 <div className="button-detail button-text">
-                    <div>
-                        Đến cửa hàng
-                    </div>
+                    Đến cửa hàng
                 </div>
             </div>
         )

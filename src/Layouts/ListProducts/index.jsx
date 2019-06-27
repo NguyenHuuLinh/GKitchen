@@ -9,9 +9,7 @@ const ListProducts = () => (
             <h1 className="title">SẢN PHẨM</h1>
             <p className="title-content">Đại gia đình thịt thật thà đợi bạn đón về nhà</p>
         </div>
-        <div>
-            <DailyProducts />
-        </div>
+        <DailyProducts />
     </div>
 )
 

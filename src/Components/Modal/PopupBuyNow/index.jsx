@@ -2,15 +2,7 @@ import React from 'react'
 import './style.css'
 
 class PopUpBuyNow extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-
-        }
-        this.closeFopUpForm = this.closeFopUpForm.bind(this);
-    }
-
-    closeFopUpForm() {
+    closeFopUpForm = () =>{
         this.props.onClose();
     }
 
@@ -20,7 +12,7 @@ class PopUpBuyNow extends React.Component {
                 <div className="popup-form">
                     <p className="text">
                         Bạn muốn nhận hàng ở khu vực nào?
-                </p>
+                    </p>
                     <i className="ion-android-close ionic-close" onClick={this.closeFopUpForm} />
                     <select className="dropdown">
                         <option>--Chọn khu vực--</option>

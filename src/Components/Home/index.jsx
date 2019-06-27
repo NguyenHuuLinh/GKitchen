@@ -10,17 +10,15 @@ class Home extends React.Component {
         this.state = {
             isShowFormBuyNow: false
         }
-        this.showFormBuyNow = this.showFormBuyNow.bind(this);
-        this.closeFormBuyNow = this.closeFormBuyNow.bind(this);
     }
 
-    showFormBuyNow() {
+    showFormBuyNow = () => {
         this.setState({
             isShowFormBuyNow: !this.state.isShowFormBuyNow
         })
     }
 
-    closeFormBuyNow() {
+    closeFormBuyNow = () => {
         this.setState({
             isShowFormBuyNow: false
         })

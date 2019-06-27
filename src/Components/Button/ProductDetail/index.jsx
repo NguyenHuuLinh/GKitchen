@@ -6,10 +6,9 @@ class ProductDetail extends React.Component {
         super(props)
         this.state = {
         }
-        this.handlePage = this.handlePage.bind(this);
     }
 
-    handlePage() {
+    handlePage = () =>{
         this.props.onClickPage();
     }
 
@@ -17,9 +16,7 @@ class ProductDetail extends React.Component {
         return (
             <div>
                 <div className="button-detail button-text" onClick={this.handlePage}>
-                    <div>
                         Xem chi tiết
-                   </div>
                 </div>
             </div>
         )

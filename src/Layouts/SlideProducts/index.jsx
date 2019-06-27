@@ -10,10 +10,9 @@ class SlideProducts extends React.Component {
         this.state = {
             isShowPage: false
         }
-        this.showPage = this.showPage.bind(this);
     }
 
-    showPage() {
+    showPage = () =>{
         this.setState({
             isShowPage: !this.state.isShowPage
         })
