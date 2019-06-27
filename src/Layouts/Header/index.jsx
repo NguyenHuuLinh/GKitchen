@@ -1,7 +1,6 @@
 import React from 'react'
 import './style.css'
 import { Link } from "react-router-dom";
-import ProductsDetail from '../ProductDetail';
 
 class Header extends React.Component {
     render() {
@@ -41,22 +40,3 @@ class Header extends React.Component {
 }
 
 export default Header;
-
-/*
-<div id="content" className="container">
-                    <div className="element1">
-                        <div id="title" >Sản phẩm</div>
-                        <div id="title" >Nấu ngon cùng G</div>
-                        <div id="title" >Khuyến mãi</div>
-                    </div>
-                    <div>
-                        <img src="https://tinyurl.com/y57g96eg" className="img-logo" alt="logo"></img>
-                    </div>
-                    <div>
-                        <div id="title" >Quy trình 3F Plus</div>
-                        <div id="title" >Câu chuyện của G</div>
-                        <i className="icon ion-social-facebook i-icon"></i>
-                        <i class="icon ion-social-youtube i-icon"></i>
-                    </div>
-                </div>
-*/

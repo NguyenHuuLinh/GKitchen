@@ -14,7 +14,7 @@ const Footer = () =>(
             <div className="address">Hot line: 1900 1708</div>
             <div className="address">Email: info@feedy.com.vn</div>
         </div>
-        <img src="https://gkitchen.com/images/home/dathongbao.png" className="img-dev"></img>
+        <img src="https://gkitchen.com/images/home/dathongbao.png" className="img-dev" alt=""></img>
     </div>
 )
 

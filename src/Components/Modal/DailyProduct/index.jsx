@@ -1,6 +1,5 @@
 import React from 'react'
 import './style.css'
-import ProductDetail from '../../Button/ProductDetail';
 import Footer from '../../../Layouts/Footer';
 
 class DailyProducts extends React.Component {
@@ -27,7 +26,7 @@ class DailyProducts extends React.Component {
     }
 
     render() {
-        const { error, isLoad, items } = this.state;
+        const { isLoad, items } = this.state;
         if (!isLoad) {
             return <div>Loading...</div>
         }
@@ -35,26 +34,24 @@ class DailyProducts extends React.Component {
             return (
                 <div>
                     <div className="cover">
-                        {items.map(item => (
-                            <div>
+                        {items && items.map((item) => (
+                            <div key={item.id}>
                                 <div className="cover-img">
-                                    <img src={item.url_img} className="img-img" />
+                                    <img src={item.url_img} className="img-img" alt=""/>
                                 </div>
                                 <div className="cover-icon">
-                                    <img src={item.url_icon} className="img-icon" />
+                                    <img src={item.url_icon} className="img-icon" alt=""/>
                                 </div>
                                 <div className="cover-content">
                                     {item.title}
-                                </div>
+                                </div>  
                                 <div className="cover-content">
                                     {item.content}
                                 </div>
                             </div>
-                        )
-                        )
-                        }
+                        ))}
                     </div>
-                    <Footer/>
+                    <Footer />
                 </div>
             )
         }
